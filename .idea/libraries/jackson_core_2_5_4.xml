@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="jackson-core-2.5.4">
+    <CLASSES>
+      <root url="jar://E:/Soft/jackson-core-2.5.4.jar!/" />
+      <root url="jar://E:/Soft/jackson-all-1.9.9.jar!/" />
+      <root url="jar://E:/Soft/sqlite-jdbc-3.8.11.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/Soft/jackson-core-jackson-core-2.6.2.zip!/jackson-core-jackson-core-2.6.2/src/main/java" />
+      <root url="jar://E:/Soft/jackson-core-jackson-core-2.6.2.zip!/jackson-core-jackson-core-2.6.2/src/test/java" />
+      <root url="jar://E:/Soft/sqlite-jdbc-3.8.11.2.jar!/" />
+    </SOURCES>
+  </library>
+</component>
