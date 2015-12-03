@@ -4,6 +4,7 @@
       <root url="jar://E:/Soft/jackson-core-2.5.4.jar!/" />
       <root url="jar://E:/Soft/jackson-all-1.9.9.jar!/" />
       <root url="jar://E:/Soft/sqlite-jdbc-3.8.11.2.jar!/" />
+      <root url="jar://E:/Soft/testng-6.8.5.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

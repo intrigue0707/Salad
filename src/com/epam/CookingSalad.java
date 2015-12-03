@@ -16,6 +16,7 @@ import java.util.Scanner;
 public class CookingSalad {
 
     public static void  CookingSalad() throws IOException, MyInputException, MyIOException, MyIOEforstring,NullPointerException,IncorrectChoosing{
+        Salad sal=new Salad();
         Scanner sc = new Scanner(System.in);
         readFromFile.main();
         ConnectToDB.createTable();
@@ -34,10 +35,13 @@ public class CookingSalad {
         }else {
             throw new IncorrectChoosing();
         }
+
         ConnectToDB.insertTable();
         ConnectToDB.readfromDB();
+        Salad.sortingValues();
+        Salad.sortingKeys();
         }
 
 
-    }
+}
 

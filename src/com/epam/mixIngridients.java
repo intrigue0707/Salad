@@ -29,7 +29,7 @@ public class mixIngridients {
 
                 System.out.println("Please, enter weight of ingridients in gramms");
                  weight = scanDouble();
-                System.out.println("Total calories for ingridient;" +sal.getTotalcalories()*weight/100);
+                System.out.println("Total calories for ingridient;" +salad.getTotalcalories()*weight/100);
                 System.out.println("Please,enter type of entered ingridient - vegetables, fruits, grocery");
                 category = scanMessage();
 

@@ -42,6 +42,7 @@ public class ConnectToDB {
 
             stmt = c.createStatement();
             Salad sal=new Salad();
+
            for ( String key : sal.mix.keySet()
                    ) {
 
