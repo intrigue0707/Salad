@@ -1,7 +1,7 @@
 package com.epam.ReadWrite.JSON;
 
 import com.epam.Exceptions.MyIOEforstring;
-import com.epam.addingToList;
+import com.epam.MixingSalad.AddingToList;
 import org.codehaus.jackson.JsonFactory;
 import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.JsonParser;
@@ -17,7 +17,7 @@ import java.io.IOException;
  */
 public class writeToFile {
     public static void writeToFile() throws IOException, MyIOEforstring {
-        addingToList sal= new addingToList();
+        AddingToList sal= new AddingToList();
         ObjectMapper mapper = new ObjectMapper();
         JsonFactory jfactory = new JsonFactory();
         JsonParser jParser = jfactory.createJsonParser(new File("src/com/epam/ReadWrite/Ingridients.json"));
@@ -25,7 +25,7 @@ public class writeToFile {
         ObjectNode newNode = mapper.createObjectNode();
         newNode.put("name", sal.getJIngr());
         newNode.put("calories", sal.getJcalories());
-        JsonNode contactNode = root.path(addingToList.jcategory);
+        JsonNode contactNode = root.path(AddingToList.jcategory);
         ((ArrayNode) contactNode).add(newNode);
         mapper.writeValue(new File("src/com/epam/ReadWrite/JSON/Ingridients.json"), root);
 

@@ -1,6 +1,6 @@
 package com.epam.DB;
 
-import com.epam.Salad;
+import com.epam.MixingSalad.Salad;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -43,13 +43,13 @@ public class ConnectToDB {
             stmt = c.createStatement();
             Salad sal=new Salad();
 
-           for ( String key : sal.mix.keySet()
+           for ( String key : sal.getMix().keySet()
                    ) {
 
                 String sql = String.format("INSERT INTO MYSALAD (NAME) VALUES ('%s');", key );
                stmt.executeUpdate(sql);
             }
-            for ( Double values : sal.mix.values()) {
+            for ( Double values : sal.getMix().values()) {
 
                     String sql = String.format("INSERT INTO MYSALAD (WEIGHT) VALUES (%s);", values );
                 stmt.executeUpdate(sql);

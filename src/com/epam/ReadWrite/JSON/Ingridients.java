@@ -1,8 +1,8 @@
 package com.epam.ReadWrite.JSON;
 
-import com.epam.Fruits;
-import com.epam.Grocery;
-import com.epam.Vegetables;
+import com.epam.Main.Fruits;
+import com.epam.Main.Grocery;
+import com.epam.Main.Vegetables;
 
 import java.util.List;
     /**
